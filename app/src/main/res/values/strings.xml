@@ -13,6 +13,8 @@
     <string name="toast_menu_2">Menu Item 2 clicked</string>
     <string name="unknown_action">Unknown action received</string>
 
+    <string name="text_action_button">Action button clicked</string>
+
     <!--titles for menu items-->
     <string name="title_menu_1">Menu Item 1</string>
     <string name="title_menu_2">Menu Item 2</string>

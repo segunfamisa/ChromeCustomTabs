@@ -16,6 +16,7 @@ public class ChromeTabActionBroadcastReceiver extends BroadcastReceiver{
 
     public static final int ACTION_MENU_ITEM_1 = 1;
     public static final int ACTION_MENU_ITEM_2 = 2;
+    public static final int ACTION_ACTION_BUTTON = 3;
 
 
     @Override
@@ -36,6 +37,8 @@ public class ChromeTabActionBroadcastReceiver extends BroadcastReceiver{
                 return context.getString(R.string.toast_menu_1);
             case ACTION_MENU_ITEM_2:
                 return context.getString(R.string.toast_menu_2);
+            case ACTION_ACTION_BUTTON:
+                return context.getString(R.string.text_action_button);
             default:
                 return context.getString(R.string.unknown_action);
         }
