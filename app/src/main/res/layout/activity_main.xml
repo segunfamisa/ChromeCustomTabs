@@ -17,9 +17,10 @@
         android:id="@+id/edit_url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="URL to open"
-        android:text="http://segunfamisa.com/posts/chrome-custom-tabs"
+        android:hint="@string/hint_url"
+        android:text="@string/default_url"
         android:lines="1"
+        android:inputType="textUri"
         android:ellipsize="end"
         android:textSize="15sp"
         />
@@ -28,18 +29,18 @@
         android:id="@+id/button_webview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open in WebView"/>
+        android:text="@string/button_text_webview"/>
 
     <Button
         android:id="@+id/button_external"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open in Browser"/>
+        android:text="@string/button_text_browser"/>
 
     <Button
         android:id="@+id/button_chrome_custom_tab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open in Chrome Custom Tab"/>
+        android:text="@string/button_text_chrome"/>
 
 </LinearLayout>

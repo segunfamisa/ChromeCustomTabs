@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ChromeCustomTabs</string>
+    <string name="default_url">http://segunfamisa.com/posts/chrome-custom-tabs</string>
+    <string name="hint_url">URL to open</string>
+    <string name="button_text_webview">Open in WebView</string>
+    <string name="button_text_browser">Open in Browser</string>
+    <string name="button_text_chrome">Open in Chrome Custom Tab</string>
 </resources>
