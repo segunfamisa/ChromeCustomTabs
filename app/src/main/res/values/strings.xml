@@ -2,7 +2,19 @@
     <string name="app_name">ChromeCustomTabs</string>
     <string name="default_url">http://segunfamisa.com/posts/chrome-custom-tabs</string>
     <string name="hint_url">URL to open</string>
+
+    <!-- button texts -->
     <string name="button_text_webview">Open in WebView</string>
     <string name="button_text_browser">Open in Browser</string>
     <string name="button_text_chrome">Open in Chrome Custom Tab</string>
+
+    <!-- toasts for menu items -->
+    <string name="toast_menu_1">Menu Item 1 clicked</string>
+    <string name="toast_menu_2">Menu Item 2 clicked</string>
+    <string name="unknown_action">Unknown action received</string>
+
+    <!--titles for menu items-->
+    <string name="title_menu_1">Menu Item 1</string>
+    <string name="title_menu_2">Menu Item 2</string>
+
 </resources>
