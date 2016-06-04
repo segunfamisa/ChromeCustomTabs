@@ -23,6 +23,7 @@
         android:ellipsize="end"
         android:textSize="15sp"
         android:gravity="center_vertical"
+        android:inputType="textUri"
         />
 
     <Button

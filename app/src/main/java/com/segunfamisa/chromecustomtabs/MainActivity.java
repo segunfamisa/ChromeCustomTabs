@@ -21,10 +21,14 @@ public class MainActivity extends AppCompatActivity{
     Button buttonChromeTab;
     EditText editUrl;
 
+    private CustomTabActivityHelper mCustomTabActivityHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mCustomTabActivityHelper = new CustomTabActivityHelper();
 
         editUrl = (EditText) findViewById(R.id.edit_url);
         buttonWebView = (Button) findViewById(R.id.button_webview);
@@ -38,6 +42,18 @@ public class MainActivity extends AppCompatActivity{
 
         //set selection to the last index of editurl
         editUrl.setSelection(editUrl.getText().toString().length());
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mCustomTabActivityHelper.bindCustomTabsService(this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mCustomTabActivityHelper.unbindCustomTabsService(this);
     }
 
     private View.OnClickListener buttonClickListener = new View.OnClickListener() {
