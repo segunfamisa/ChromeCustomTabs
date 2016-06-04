@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity{
             String url = editUrl.getText().toString();
 
             if (validateUrl(url)) {
+                editUrl.setError(null);
                 Uri uri = Uri.parse(url);
                 if (uri != null) {
                     if (v == buttonWebView) {
@@ -72,12 +73,14 @@ public class MainActivity extends AppCompatActivity{
                         openCustomChromeTab(uri);
                     }
                 }
+            } else {
+                editUrl.setError(getString(R.string.error_invalid_url));
             }
         }
     };
 
     private boolean validateUrl(String url) {
-        return url != null && url.length() > 0;
+        return url != null && url.length() > 0 && (url.startsWith("http://") || url.startsWith("https://"));
     }
 
     /**

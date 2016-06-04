@@ -17,4 +17,6 @@
     <string name="title_menu_1">Menu Item 1</string>
     <string name="title_menu_2">Menu Item 2</string>
 
+    <string name="error_invalid_url">URL doesn\'t look valid</string>
+
 </resources>
