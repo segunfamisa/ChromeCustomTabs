@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.segunfamisa.chromecustomtabs.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL to open"
+        android:text="http://segunfamisa.com/posts/chrome-custom-tabs"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:id="@+id/button_webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open in WebView"/>
+
+    <Button
+        android:id="@+id/button_external"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open in Browser"/>
+
+    <Button
+        android:id="@+id/button_chrome_custom_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open in Chrome Custom Tab"/>
+
+</LinearLayout>
